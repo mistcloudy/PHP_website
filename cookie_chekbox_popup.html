@@ -1,0 +1,26 @@
+<html>
+<head>
+ <title>popup</title>
+<SCRIPT language="JavaScript">
+<!--
+function setCookie( name, value, expiredays ) {
+ var todayDate = new Date();
+  todayDate.setDate( todayDate.getDate() + expiredays );
+  document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+}
+function closeWin() {
+ if ( document.forms[0].Notice.checked )
+   setCookie( "Notice", "done" , 1);
+  self.close();
+}
+// -->
+</SCRIPT>
+</head>
+
+<body>
+공지사항 내용<br>
+<form>
+<input type=CHECKBOX name="Notice" value="">  다음에 접속하믄 공지사항 안뜸 <input type="button" name="button" value="닫기" onclick=closeWin()>
+</form>
+</body>
+</html>
